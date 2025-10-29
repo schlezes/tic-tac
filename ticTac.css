@@ -1,0 +1,77 @@
+
+button {
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.instructions {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.flip3D { 
+   width: 100px;
+   height: 100px;
+   margin-right:auto;
+  margin-left: auto;
+}
+.flip3D > .front {
+   position: absolute;
+   -webkit-transform: perspective(600px) rotateY(0deg);
+           transform: perspective(600px) rotateY(0deg);
+   background: #fff000;
+   width: 100px;
+   height: 100px;
+   border-radius: 7px;
+   -webkit-backface-visibility: hidden;
+           backface-visibility: hidden;
+   -webkit-transition: -webkit-transform .75s linear 0s;
+   transition: -webkit-transform .75s linear 0s;
+   -o-transition: transform .75s linear 0s;
+   transition: transform .75s linear 0s;
+   transition: transform .75s linear 0s, -webkit-transform .75s linear 0s;
+}
+.flip3D > .front {
+   text-align: center;
+   font-size: 2em;
+}
+.flip3D > .back {
+   position: absolute;
+   -webkit-transform: perspective(600px) rotateY(180deg);
+           transform: perspective(600px) rotateY(180deg);
+   background: #80BFFF;
+   width: 100px;
+   height: 100px;
+   border-radius: 7px;
+   -webkit-backface-visibility: hidden;
+           backface-visibility: hidden;
+   -webkit-transition: -webkit-transform .75s linear 0s;
+   transition: -webkit-transform .75s linear 0s;
+   -o-transition: transform .75s linear 0s;
+   transition: transform .75s linear 0s;
+   transition: transform .75s linear 0s, -webkit-transform .75s linear 0s;
+   text-align: center;
+   font-size: 7.5em;
+}
+
+#table {
+    border: solid 1px #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+.size {
+   width: 125px;
+   height: 125px;
+   padding: 0%;
+}
+.tvert {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.tvert {
+  margin: auto;
+}

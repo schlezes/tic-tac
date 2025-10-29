@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tic Tac</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="ticTac.css">
+
+  <style>
+
+body {
+    background-color: #CCCCFF;
+/*    font-style: oblique;*/
+}
+.header {
+    min-height: 70px;
+    background-color: #0000ff;
+    color: #ffffff;
+    border-radius: 5px;
+    font-style: oblique;
+}
+.vert {
+    text-align: center;
+    left: 20%;
+    right: 20%;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+#menu {
+    min-height: 50px;
+    margin-top: 1%;
+    background-color: #f0f0f0;
+    font-size: 1.5em;
+    border-radius: 5px;
+    font-style: oblique;
+}
+#content {
+    margin-top: 1%;
+    text-align: center;
+    border: 1px dotted black;
+    border-radius: 5px;
+}
+#footer {
+    clear: both;
+    min-height: 50px;
+    margin-top: 1%;
+    background-color: #0000ff;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: x-large;
+    font-style: oblique;
+}
+#blink {
+    visibility: hidden;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="vert"><h1>Tic Tac</h1></div>
+    </div>
+
+    <div id="menu">
+        <div class="vert">Click (one of) the Click me buttons for an X or O</div>
+    </div>
+
+    <div id="content">
+<!--             <div> -->
+        <div class="instructions">
+            <p>
+                <button id="x" class="x">Click me for X</button>
+                <button id="o" class="o">Click me for O</button>
+            </p>
+            <p id="blink">now click on the table cells</p>
+        </div>
+    </div>
+    <div>
+        <table id="table" class="close" border="1">
+            <tbody>
+                <tr class="wide">
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="1" class="front"></div>
+                        </div>
+                    </td>
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="2" class="front"></div>
+                        </div>
+                    </td>
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">O</div></div>
+                            <div id="3"class="front"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="wide">
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="4" class="front"></div>
+                        </div>
+                    </td>
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="5" class="front"></div>
+                        </div>
+                    </td>
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="6" class="front"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="wide">
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="7" class="front"></div>
+                        </div>
+                    </td>
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="8" class="front"></div>
+                        </div>
+                    </td>
+                    <td class="size">   
+                        <div class="flip3D">
+                            <div class="back"><div class="tvert">X</div></div>
+                            <div id="9" class="front"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+
+    </div>
+
+    <div id="footer" class="clear">footer is the best that it can be to see if overflow the max height of the div from css</div>
+
+    <script src="main.js"></script> 
+
+</body>
+</html>
